@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::after,*::before{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            color: aliceblue;
+            background-color: #212121;
+        }
+        .cover{
+            top: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://img.freepik.com/free-vector/blurred-valentine-s-day-wallpaper_23-2148819570.jpg);
+            background-size: cover;
+            transform-origin: 0;
+            box-shadow: 1px 1px 12px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        .book{
+            position: relative;
+            width: 260px;
+            height: 350px;
+            border-radius: 10px;
+            background-color: #effffe;
+            box-shadow: 1px 1px 12px ;
+            transform: preserve-3d;
+            perspective: 2000px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #212121;
+            text-align: center;
+        }
+        .book:hover .cover{
+            transition: 0.5s;
+            transform: rotateY(-80deg);
+        }
+        .cover>p{
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .cover>h2>span{
+            color: blue;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .content>p{
+margin-bottom: 10px;
+        }
+        .youtub{
+            color: red;
+        }
+        .bb{
+            font-size: 100px;
+            color: blue;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="cover">
+            <p>GiVE FOR U</p>
+            <h2>BEST<br> <span>
+                FRIEND
+            </span></h2>
+            <p>LUYAUN</p>
+        </div>
+        <div class="content">
+           <p class="bb">🖕</p>
+        </div>
+    </div>
+</body>
+</html>
